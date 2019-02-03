@@ -1,13 +1,18 @@
 {
   "name": "robot-wars",
   "version": "1.0.0",
-  "description": "",
+  "description": "Node.js project",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "Yulia L",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "my git url"
+  },
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "mocha"
+  },
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^5.2.0",
