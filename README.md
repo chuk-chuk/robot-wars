@@ -1,6 +1,6 @@
 # Robot Wars
 A command line program that takes a string input and returns an output containing the new robots coordinates. Application is written in JavaScript in Node.js using `nodemon` to automatically restart the program. Following the best TDD practices, I opted to use Mocha as my testing framework with Chai assertion library. I have also used Sinon to stub classes. 
-I attempted to demonstrate the use object-oriented design to solve the problem. `index.js` acts as the controller and executes the result to the console. 
+I attempted to demonstrate the use of object-oriented design to solve the problem. `index.js` acts as a controller and executes a result to the console. 
 
 ## Installation
 
@@ -30,14 +30,14 @@ If robots attempts to leave the given arena, the console message will be raised 
 
 User types input on the start of the program by entering a string with new lines and given spaces.
 
-Due to the time given, a validation isn't implemented at the moment, meaning there is no check around the info a user attempts to submit.
+Due to the given time frame, a validation unit isn't implemented at the moment, meaning there is no check around the info a user attempts to submit.
 
 Tests are covering all happy paths with various scenarios when testing a game logic.
 
 ## Improvements 
 
-- Implement validation of an input.
-- Interactive prompt questionnaire: perhaps one of the npm modules(inquirer).
-- Raising server errors when rules validations found
-- Prevent robots moves into coordinates taken by other robots in the game.
-- Wrapping index.js into try/catch block to handle server errors on the start of the app.
+- Implement validation of an input
+- Interactive prompt questionnaire: perhaps one of the npm modules(inquirer)
+- Raising server errors when rules violations found
+- Prevent robots moves into coordinates taken by other robots in the game
+- Wrapping index.js into try/catch block to handle server errors on the start of the app
