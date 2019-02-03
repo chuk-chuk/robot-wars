@@ -36,8 +36,8 @@ Tests are covering all happy paths with various scenarios when testing a game lo
 
 ## Improvements 
 
-Implement validation of an input.
-Interactive prompt questionnaire: perhaps one of the npm modules(inquirer).
-Raising server errors when rules validations found
-Prevent robots moves into coordinates taken by other robots in the game.
-Wrapping index.js into try/catch block to handle server errors on the start of the app.
+- Implement validation of an input.
+- Interactive prompt questionnaire: perhaps one of the npm modules(inquirer).
+- Raising server errors when rules validations found
+- Prevent robots moves into coordinates taken by other robots in the game.
+- Wrapping index.js into try/catch block to handle server errors on the start of the app.
