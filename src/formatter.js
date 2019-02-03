@@ -11,17 +11,17 @@ class Formatter {
 
     convertRobotsInput(input){
         const results = [];
-        const inputArray = input.split('\n');
-        const lengthArr = inputArray.length-1//4
+        const inputArray = input.split('\\n');
+        const lengthArr = inputArray.length-1;
         var i;
         for(i = 1; i < lengthArr; i = i+2){
-            results.push({position:inputArray[i], moves:inputArray[i+1].trim()})
+            results.push({position:inputArray[i], moves:inputArray[i+1].trim()});
         }
         return results;
     }
 
     convertPosition(position){
-        const obj = position.trim().split(' ')
+        const obj = position.trim().split(' ');
         return {
             position: {x:parseInt(obj[0]), y:parseInt(obj[1])},
             heading:obj[2]

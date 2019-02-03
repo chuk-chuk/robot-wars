@@ -23,7 +23,7 @@ describe('formatter', () => {
     describe('convertRobotsInput ', () => {
 
         it('should return array of robots info', () => {
-            const input = '5 5\n 1 2 N\n LMLMLMLMM\n 3 3 E\n MMRMMRMRRM';
+            const input = '5 5\\n 1 2 N\\n LMLMLMLMM\\n 3 3 E\\n MMRMMRMRRM';
             const result = formatter.convertRobotsInput(input);
             expect(result).to.be.an('array');
             expect(result).to.eql([{ position:' 1 2 N', moves:'LMLMLMLMM'}, { position:' 3 3 E', moves:'MMRMMRMRRM'}]);
